@@ -3,7 +3,7 @@ public class DigitsSum
 {
 	public static void main(String[] args) 
 	{
-		
+		//test commit line
 		Scanner input = new Scanner(System.in); // create a scanner input
 		System.out.println("Enter a number between 0 and 1000: "); // tell user what to input
 		int number = input.nextInt(); // take the int input from the user
