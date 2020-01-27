@@ -27,9 +27,9 @@ public class VendingMachine
 		
 		//System.out.println("Money: " + money);
 		
-		int potatoChipsStock = 2;
-		int cookieStock = 0;
-		int candyStock = 3;
+		int potatoChipsStock = 0;
+		int cookieStock = 1;
+		int candyStock = 0;
 		
 		System.out.println("Choices: \n 1)\tPotato Chips $1.25\n 2)\tCookies $0.85\n 3)\tCandies $0.95");
 		/*
@@ -48,6 +48,7 @@ public class VendingMachine
 				if(money >= 1.25) 
 				{
 					money -= 1.25;
+					potatoChipsStock--;
 					System.out.println("Please take your potato chips.");
 				} else {System.out.println("You lack required funds to purchase potato chips.");}
 			} else {System.out.println("Potato chips are out of stock");}
@@ -58,6 +59,7 @@ public class VendingMachine
 				if(money >= 0.85) 
 				{
 					money -= 0.85;
+					cookieStock--;
 					System.out.println("Please take your cookie.");
 				} else {System.out.println("You lack required funds to purchase a cookie.");}
 			} else {System.out.println("Cookies are out of stock");}
@@ -68,9 +70,13 @@ public class VendingMachine
 				if(money >= 0.95) 
 				{
 					money -= 0.95;
+					candyStock--;
 					System.out.println("Please take your candy.");
 				} else {System.out.println("You lack required funds to purchase candy.");}
 			} else {System.out.println("Candy is out of stock");}
+		break;
+		default:
+			System.out.println("Unknown item choice.");
 		break;
 		
 		} // end switch statement

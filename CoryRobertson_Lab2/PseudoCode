@@ -1,0 +1,9 @@
+1. We create variables for each type of denomination such as quarters, dimes, etc.
+2. Then we take input from the user for each of these denominations.
+3. To add the currencies up we take them by their integer amount (e.g. we have 3 quarters so quarters = 3, not 0.75) and we multiply it by 0.25 to get 0.75, and add that number in a money variable.
+4. Do the above step for the rest of the denominations of money.
+5. Ask the user for their choice of item.
+6. Depending on their choice, we check if the item is in stock, and if the user has enough money for the item.
+7. If both checks pass we give them the item and subtract the cost from their money and decrement the stock of the item.
+8. We then do the reverse of step 3 and take the amount of divisible coins as a whole number in the money to find out how many coins of each type to give to the user.
+9. Display to user each coin amount.
