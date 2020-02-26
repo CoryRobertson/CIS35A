@@ -1,0 +1,8 @@
+In order for this project to function we need a couple things as follows:
+A class to store the workers data such as salary, pay, rate, name, etc...
+A class to run and use this data and then wrap it to the user to give the user ability to customize pay rates and such.
+
+We should have a while loop state machine in the main class that is waiting for the user to be done inputing new workers and then print out the table.
+The flow chart should be as follows:
+User chooses to add a worker -> user enters name -> user enters the pay type -> user enters data specific to that pay type -> user decides on giving bonus -> worker added to the table -> restart this loop
+Once the user is done looping through that we then print it out in a nice little table 
